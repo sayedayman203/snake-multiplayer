@@ -1,0 +1,164 @@
+/* Main */
+body, html {
+    margin: 0;
+    padding: 0
+}
+button {
+    border: 0;
+    background-color:#00f;
+    color:#fff;
+    width: 300px;
+    padding: 10px 0;
+    font-size: 22px;
+    margin: 30px auto;
+    border-radius: 20px;
+    display: block;
+    cursor: pointer;
+}
+
+div.back {
+    position: fixed;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 20px;
+    top: 10px;
+    right: 20px;
+    display: none
+}
+
+table.ptable {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    width: 90%;
+    text-align: center
+}
+
+/* Interface */
+#interface {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Options */
+
+#options {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none
+}
+
+#options .buttons{
+    display: none
+}
+
+
+#options .changenumber {
+    display: none
+}
+
+#options .changenumber label {
+    font-size: 22px;
+    display: inline-block;
+}
+
+#options input[type='number'] {
+    width: 200px;
+    height: 30px;
+    border-radius: 20px
+}
+
+#options .changecolor {
+    display: none
+}
+
+#options .control {
+    display: none;
+}
+
+#options .control label {
+    font-size: 22px;
+    display: inline-block;
+}
+
+
+
+
+
+
+#options .colors label {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+#options .colors label.red {background-color: #f00} 
+#options .colors label.blue {background-color: #00f} 
+#options .colors label.black {background-color: #000} 
+#options .colors label.yellow {background-color: #ff0} 
+#options .colors label.orange {background-color: rgb(255, 100, 0)} 
+
+
+
+#options .changescore {
+    display: none
+}
+
+#options .changescore label {
+    font-size: 22px;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+#game {
+    position: fixed;
+    display: none
+}
+
+
+
+#game div.box {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+}
+
+#game #snake div {
+    background-color: #f00;
+}
+
+#game #food {
+    background-color: #0f0
+}
+
+#game div.score {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 60px;
+    opacity: .4;
+    z-index: 99;
+}
+
+#game .score .sscore {
+    display: inline-block;
+    padding: 10px 20px
+}
+
+div.finish {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center
+}

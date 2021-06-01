@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="ui">
+                <div class="back">x</div>
+                <table class="ptable" border="1">
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                </table>
+                <div id="interface">
+                    <button class="play">Play</button>
+                    <button class="options">Options</button>
+                </div>
+        
+                <div id="options">
+        
+                    <div class="buttons">
+                        <button class="cnumber">Change Number</button>
+                        <button class="ccolor">Change Colors</button>
+                        <button class="ccontrol">Control</button>
+                        <button class="cscore">Score</button>
+                    </div>
+                    
+                    
+                    <div class="changenumber">
+                        <label for="num">Number Of Players(1-5): </label>
+                        <input type="text" name="num" id="num">
+                        <button class="Save">Save</button>
+                    </div>
+        
+        
+        
+                    <div class="changecolor">
+                        <label for="colorP">Color Of Player: </label>
+                        <input type="text" name="playernum">
+        
+                        <div class="colors">
+                            <input type="radio" name="color" value="#f00">
+                            <label for="color" class="red"></label><br />
+        
+                            <input type="radio" name="color" value="#00f">
+                            <label for="color" class="blue"></label><br />
+                            
+                            <input type="radio" name="color" value="#000">
+                            <label for="color" class="black"></label><br />
+        
+                            <input type="radio" name="color" value="#ff0">
+                            <label for="color" class="yellow"></label><br />
+                            
+                            <input type="radio" name="color" value="rgb(255, 100, 0)">
+                            <label for="color" class="orange"></label><br />
+                        </div>
+                        <button class="Save">Save</button>
+                    </div>
+        
+                    <div class="control">
+                        <label for="num">Control Of Player: </label>
+                        <input type="text" name="playernum"><br /><br />
+        
+                        <div class="pcontrol">
+                            <label for="num">Up: </label>
+                            <input type="text" name="up" id="up"><br />
+                            <label for="num">Down: </label>
+                            <input type="text" name="down" id="down"><br />
+                            <label for="num">Left: </label>
+                            <input type="text" name="left" id="left"><br />
+                            <label for="num">Right: </label>
+                            <input type="text" name="right" id="right"><br />
+                        </div>
+        
+                        <button class="Save">Save</button>
+                    </div>
+
+                    <div class="changescore">
+                        <label for="scor">Score: </label>
+                        <input type="text" name="score" id="score">
+                        <button class="Save">Save</button>
+                    </div>
+                </div>
+        </div>
+
+        <div id="game">
+            
+        </div>
+        <script src="game.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
